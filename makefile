@@ -7,8 +7,8 @@ default: all
 
 all: program
 
-Hello: program.c
+program: program.c
         $(CC) $(CFLAGS) -o program program.c
 
-clean veryclean:
+clean :
         $(RM) program
